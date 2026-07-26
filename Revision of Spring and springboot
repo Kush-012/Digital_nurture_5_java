@@ -59,3 +59,8 @@ SLF4J=> simple logging facade for java used to write dev and prod logs.
 SonarQube:
 automated code review tool 
 used for continuous inspection of code quality, detecting bugs, security vulnerabilities.
+
+Project structure:
+Spring Boot project structure follows the Maven directory layout. The main code is in src/main/java, 
+configuration files are in src/main/resources, tests are in src/test/java, 
+dependencies are managed in pom.xml, and the target folder contains the compiled output (JAR/WAR).
