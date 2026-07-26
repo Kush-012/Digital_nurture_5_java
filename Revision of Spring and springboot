@@ -27,8 +27,35 @@ clean=> clean target folder
 default=> compile,package,depoly
 site=> used for documentataion
 
+mvn spring-boot:run: used to run spring boot 
+
 commands: mvn clean, mvn compile, mvn site
 
 POM:
 project object model
 
+Microservices:
+Allow large application split into independent smaller componenets
+debugging is easier
+scalable
+faster development
+
+Tomcat:
+Tomcat is servelet container (8080)
+which uses servlets (classes) for its operations
+Http Req, Http Res are its methods
+further dispatcher servlets (handler mapping) are used to mapping incoming req with functions and parsing from body,json to java objects
+
+JPA
+allow users to map java classes with database tables which internally uses hibernate for its implementation
+
+Testing:
+Junit, Mockito, SLF4J
+
+Junit=> used to write unit tests to verify methods or classes work correctly.
+Mockito=> Used to create mock objects for isolated unit testing.
+SLF4J=> simple logging facade for java used to write dev and prod logs.
+
+SonarQube:
+automated code review tool 
+used for continuous inspection of code quality, detecting bugs, security vulnerabilities.
