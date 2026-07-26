@@ -1,0 +1,8 @@
+springboot:
+Java-based framework built on top of the Spring Framework
+minimizes configuration by providing starter dependencies (like spring data jpa, spring starter web), and embedded servers (Tomcat).
+
+spring:
+dependency injection framework
+manual configuration in foam of xml and annotation based by creating applicationcontext object
+no embedded server provided. use external server by packaging in form of WAR.
