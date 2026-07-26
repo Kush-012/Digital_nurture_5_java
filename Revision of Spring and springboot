@@ -18,6 +18,10 @@ Maven:
 Project management tool
 helps in managing dependencies and code structure 
 
+sources of dependency:
+.mvn 
+central repo
+
 3 lifecycle:
 clean=> clean target folder
 default=> compile,package,depoly
