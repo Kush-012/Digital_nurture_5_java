@@ -40,14 +40,32 @@ debugging is easier
 scalable
 faster development
 
-Tomcat:
+web servlet:
+handles http req and response and use to serve web pages over the internet.
+
+APache Tomcat:
 Tomcat is servelet container (8080)
 which uses servlets (classes) for its operations
 Http Req, Http Res are its methods
 further dispatcher servlets (handler mapping) are used to mapping incoming req with functions and parsing from body,json to java objects
 
+Lifecycle:
+init
+service
+destroy
+
 JPA
 allow users to map java classes with database tables which internally uses hibernate for its implementation
+
+Repository:
+
+Repository
+      ↓
+CrudRepository
+      ↓
+PagingAndSortingRepository
+      ↓
+JpaRepository
 
 Testing:
 Junit, Mockito, SLF4J
@@ -59,6 +77,11 @@ SLF4J=> simple logging facade for java used to write dev and prod logs.
 SonarQube:
 automated code review tool 
 used for continuous inspection of code quality, detecting bugs, security vulnerabilities.
+
+
+
+@Configuration => mark class as configuration class and contains beans definations
+@Bean => create object of that class spring IoC
 
 Project structure:
 Spring Boot project structure follows the Maven directory layout. The main code is in src/main/java, 
