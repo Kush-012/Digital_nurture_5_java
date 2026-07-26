@@ -3,6 +3,28 @@ Java-based framework built on top of the Spring Framework
 minimizes configuration by providing starter dependencies (like spring data jpa, spring starter web), and embedded servers (Tomcat).
 
 spring:
-dependency injection framework
+dependency injection framework (made to reduce tight coupling)
 manual configuration in foam of xml and annotation based by creating applicationcontext object
 no embedded server provided. use external server by packaging in form of WAR.
+
+Working/Archietecture of spring boot:
+client => controller => service => repository
+
+@SpringBootApplication
+contains other annotation internaly like auto configuration and compoenent scan
+use run method from main file to run application, it register beans, creater container, server started
+
+Maven:
+Project management tool
+helps in managing dependencies and code structure 
+
+3 lifecycle:
+clean=> clean target folder
+default=> compile,package,depoly
+site=> used for documentataion
+
+commands: mvn clean, mvn compile, mvn site
+
+POM:
+project object model
+
