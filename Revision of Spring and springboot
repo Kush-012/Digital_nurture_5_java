@@ -40,6 +40,14 @@ debugging is easier
 scalable
 faster development
 
+An API Gateway acts as the single entry point for clients. It handles request routing, authentication, authorization, rate limiting, 
+logging, CORS, and can perform load balancing before forwarding requests to the appropriate microservice.
+
+Service Discovery solves the problem of locating services whose addresses may change dynamically. Services register 
+themselves with a registry such as Netflix Eureka, and other services or the API Gateway query the registry to find available 
+instances instead of using hardcoded URLs. This enables dynamic scaling, failover, and easier management of distributed systems.
+
+
 web servlet:
 handles http req and response and use to serve web pages over the internet.
 
@@ -77,7 +85,6 @@ SLF4J=> simple logging facade for java used to write dev and prod logs.
 SonarQube:
 automated code review tool 
 used for continuous inspection of code quality, detecting bugs, security vulnerabilities.
-
 
 
 @Configuration => mark class as configuration class and contains beans definations
