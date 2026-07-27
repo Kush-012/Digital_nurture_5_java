@@ -1,0 +1,17 @@
+
+CREATE TABLE EMPLOYEE (
+  empId int,
+  name varchar(15),
+  dept varchar(10),
+  salary int
+);
+
+
+INSERT INTO EMPLOYEE(empId,name,dept,salary) VALUES (1, 'Clark', 'Sales',56);
+INSERT INTO EMPLOYEE(empId,name,dept,salary) VALUES (2, 'Dave', 'Accounting',67);
+INSERT INTO EMPLOYEE(empId,name,dept,salary) VALUES (3, 'Ava', 'Sales',44);
+
+select concat(empId," ",name) from employee; 
+select substring(name,1,2) from employee;
+select * from employee where name not like '%e';
+select select * from employee where left(name,1)=right(name,1);
