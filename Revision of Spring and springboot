@@ -94,3 +94,6 @@ Project structure:
 Spring Boot project structure follows the Maven directory layout. The main code is in src/main/java, 
 configuration files are in src/main/resources, tests are in src/test/java, 
 dependencies are managed in pom.xml, and the target folder contains the compiled output (JAR/WAR).
+
+
+dispatcher servlet: front controller receives all incomming http reqs , coordinates with helper components by route. and return back to client 
