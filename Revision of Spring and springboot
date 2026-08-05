@@ -54,7 +54,7 @@ handles http req and response and use to serve web pages over the internet.
 APache Tomcat:
 Tomcat is servelet container (8080)
 which uses servlets (classes) for its operations
-Http Req, Http Res are its methods
+Http Req, Http Res are its objects
 further dispatcher servlets (handler mapping) are used to mapping incoming req with functions and parsing from body,json to java objects
 
 Lifecycle:
